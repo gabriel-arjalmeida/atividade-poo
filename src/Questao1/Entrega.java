@@ -4,10 +4,12 @@ public  abstract class Entrega {
     private String destinatario;
     private double distancia;
     private double peso;
+    private String endereco;
 
 
     public Entrega(String destinatario, double distancia,String endereco, double peso) {
         this.destinatario = destinatario;
+        this.endereco = endereco;
         this.distancia = distancia;
         this.peso = peso;
     }
@@ -37,5 +39,13 @@ public  abstract class Entrega {
 
     public void setPeso(double peso) {
         this.peso = peso;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }
