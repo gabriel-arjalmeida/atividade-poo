@@ -1,6 +1,6 @@
 package Questao1;
 
-import java.util.List;
+
 
 public class Pedido {
     private Entrega entrega;

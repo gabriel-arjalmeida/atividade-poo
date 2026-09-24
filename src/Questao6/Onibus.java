@@ -11,9 +11,11 @@ public class Onibus extends VeiculoTerrestre{
     public void iniciar() {
         if(isTemCombustivel()){
             setLigado(true);
+            System.out.println("Ligando o onibus "+ getIdentificacao());
         }
         else{
             setLigado(false);
+            System.out.println("Combustivel insuficiente!");
         }
     }
 

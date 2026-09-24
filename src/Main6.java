@@ -5,7 +5,7 @@ public class Main6 {
 
         Veiculo veiculo1 = new Onibus(110,false,true,2000);
         Veiculo veiculo2 = new Caminhao(1113,false,true,13000);
-        Veiculo veiculo3= new Drone(100,001);
+        Veiculo veiculo3= new Drone(100,110);
 
         veiculo1.iniciar();
         veiculo2.iniciar();

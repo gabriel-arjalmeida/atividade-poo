@@ -1,6 +1,6 @@
 package Questao2;
 
-import jdk.swing.interop.SwingInterOpUtils;
+
 
 public class Ventilador implements Controlavel {
     private boolean ligado = false;

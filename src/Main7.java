@@ -3,12 +3,12 @@ import Questao7.*;
 public class Main7 {
     public static void main(String[] args) {
         Relatorio relatorio1 = new Relatorio("arquvivos confidenciais","blablabla");
-        ProcessadorRelatorios processador1 = new EnviarEmail();
-        ProcessadorRelatorios processador2 = new Imprimir();
-        ProcessadorRelatorios processador3 = new SalvarArquivo();
+        ProcessadorRelatorios processador1 = new EnviarEmail(relatorio1);
+        ProcessadorRelatorios processador2 = new Imprimir(relatorio1);
+        ProcessadorRelatorios processador3 = new SalvarArquivo(relatorio1);
 
-        processador1.processarRelatorio(relatorio1);
-        processador2.processarRelatorio(relatorio1);
-        processador3.processarRelatorio(relatorio1);
+        processador1.processarRelatorio();
+        processador2.processarRelatorio();
+        processador3.processarRelatorio();
     }
 }

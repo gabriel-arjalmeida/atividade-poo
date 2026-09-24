@@ -3,7 +3,8 @@ package Questao7;
 public class SalvarArquivo implements ProcessadorRelatorios{
     private Relatorio relatorio;
 
-    public SalvarArquivo() {
+    public SalvarArquivo(Relatorio relatorio) {
+        this.relatorio = relatorio;
     }
 
     public Relatorio getRelatorio() {
@@ -15,7 +16,7 @@ public class SalvarArquivo implements ProcessadorRelatorios{
     }
 
     @Override
-    public void processarRelatorio(Relatorio relatorio) {
+    public void processarRelatorio() {
         System.out.println("Salvando o relatorio " +relatorio.getTitulo()+"...");
     }
 }

@@ -11,9 +11,11 @@ public class Caminhao extends VeiculoTerrestre{
     public void iniciar() {
         if(isTemCombustivel()){
             setLigado(true);
+            System.out.println("Ligando o caminhao " + getIdentificacao());
         }
         else{
             setLigado(false);
+            System.out.println("Combustivel insuficiente!");
         }
     }
 

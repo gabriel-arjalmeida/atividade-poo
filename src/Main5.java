@@ -26,6 +26,6 @@ public class Main5 {
         s2.criarNotificador(notificacao2);
         s2.criarNotificador(notificacao3);
 
-        s2.mandarNotificacao(alerta);
+        s2.mandarNotificacao(alerta2);
         }
     }

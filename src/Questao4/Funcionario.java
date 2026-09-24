@@ -3,7 +3,7 @@ package Questao4;
 public abstract class Funcionario {
     private String nome;
     private int matricula;
-    private double Salario;
+
 
     public Funcionario(String nome,int matricula) {
         this.nome = nome;
@@ -27,11 +27,5 @@ public abstract class Funcionario {
         this.matricula = matricula;
     }
 
-    public double getSalario() {
-        return Salario;
-    }
 
-    public void setSalario(double salario) {
-        Salario = salario;
-    }
 }
