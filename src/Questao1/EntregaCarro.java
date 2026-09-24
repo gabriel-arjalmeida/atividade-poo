@@ -7,8 +7,8 @@ public class EntregaCarro extends Entrega{
     }
 
     @Override
-    public double calcularPreco(double distancia, double peso) {
-        return (distancia * peso) + 10;
+    public double calcularPreco() {
+        return (getDistancia() * getPeso()) + taxa;
     }
 
 

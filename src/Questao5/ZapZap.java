@@ -3,12 +3,12 @@ package Questao5;
 public class ZapZap implements Notificador{
     private Alerta alerta;
 
-    public ZapZap(Alerta alerta) {
-        this.alerta = alerta;
+    public ZapZap() {
+
     }
 
     @Override
-    public void enivarMensagem() {
+    public void enivarMensagem(Alerta alerta) {
         System.out.println("ZapZap :"+alerta);
     }
 }

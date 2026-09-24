@@ -1,5 +1,5 @@
 package Questao7;
 
 public interface ProcessadorRelatorios {
-    void processarRelatorio();
+    void processarRelatorio(Relatorio relatorio);
 }

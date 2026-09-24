@@ -15,6 +15,7 @@ public class Leitor {
         this.nome = nome;
     }
 
+
     @Override
     public String toString() {
         return "Leitor{" +

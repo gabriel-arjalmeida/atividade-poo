@@ -8,12 +8,12 @@ public class SistemaMonitoramento {
 
     public SistemaMonitoramento() {
     }
-    public void alertar(Notificador notificador) {
+    public void criarNotificador(Notificador notificador) {
         this.notificadores.add(notificador);
     }
-    public void mandarNotificacao() {
+    public void mandarNotificacao(Alerta alerta) {
         for (Notificador notificador : notificadores) {
-            notificador.enivarMensagem();
+            notificador.enivarMensagem(alerta);
         }
     }
 }

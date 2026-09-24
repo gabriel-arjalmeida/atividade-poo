@@ -4,13 +4,12 @@ public abstract class VeiculoTerrestre implements Veiculo {
     private int identificacao;
     private boolean ligado = false;
     private boolean temCombustivel = true;
-    private int capacidadeCarga;
 
-    public VeiculoTerrestre(int identificacao, boolean ligado, boolean temCombustivel, int capacidadeCarga) {
+
+    public VeiculoTerrestre(int identificacao, boolean ligado, boolean temCombustivel) {
         this.identificacao = identificacao;
         this.ligado = ligado;
         this.temCombustivel = temCombustivel;
-        this.capacidadeCarga = capacidadeCarga;
     }
 
     @Override
@@ -42,11 +41,5 @@ public abstract class VeiculoTerrestre implements Veiculo {
         this.temCombustivel = temCombustivel;
     }
 
-    public int getCapacidadeCarga() {
-        return capacidadeCarga;
-    }
 
-    public void setCapacidadeCarga(int capacidadeCarga) {
-        this.capacidadeCarga = capacidadeCarga;
-    }
 }

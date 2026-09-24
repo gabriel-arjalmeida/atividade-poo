@@ -1,11 +1,13 @@
 package Questao6;
 
 public class Drone implements Veiculo{
+    private  int identificacao;
     private int nivelBateria = 100;
     private boolean ligado = false;
 
-    public Drone(int nivelBateria) {
+    public Drone(int nivelBateria,int identificacao) {
         this.nivelBateria = nivelBateria;
+        this.identificacao = identificacao;
     }
 
     @Override

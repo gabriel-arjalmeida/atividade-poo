@@ -1,8 +1,7 @@
 package Questao3;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
+
 
 public class Emprestimo {
     private LocalDate dataInicio;
@@ -11,8 +10,7 @@ public class Emprestimo {
     private Leitor leitor;
 
     public Emprestimo(Leitor leitor,LocalDate dataInicio, Livro livro) {
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        this.dataInicio = LocalDate.now();
+        this.dataInicio = dataInicio;
         this.dataDevolucao = dataInicio.plusDays(10);
         this.livro = livro;
         this.leitor = leitor;
@@ -40,6 +38,14 @@ public class Emprestimo {
 
     public void setLivro(Livro livro) {
         this.livro = livro;
+    }
+
+    public Leitor getLeitor() {
+        return leitor;
+    }
+
+    public void setLeitor(Leitor leitor) {
+        this.leitor = leitor;
     }
 
     @Override

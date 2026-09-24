@@ -1,14 +1,14 @@
 package Questao4;
 
 public class FuncionarioRendaFixa extends Funcionario{
-    public int horasTrabalhadas;
-    public FuncionarioRendaFixa(String nome, int matricula, int horasTrabalhadas) {
+    public double salarioFixo;
+    public FuncionarioRendaFixa(String nome, int matricula, double salarioFixo) {
         super(nome, matricula);
-        this.horasTrabalhadas = horasTrabalhadas;
+        this.salarioFixo = salarioFixo;
 
     }
     public double salario(){
-        return 8.0 * (double)horasTrabalhadas;
+        return salarioFixo;
     }
 
 }

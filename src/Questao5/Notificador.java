@@ -2,6 +2,6 @@ package Questao5;
 
 public interface Notificador {
 
-    void enivarMensagem();
+    void enivarMensagem(Alerta alerta);
 
 }

@@ -9,7 +9,29 @@ public abstract class Funcionario {
         this.nome = nome;
         this.matricula = matricula;
     }
-    double salario() {
+    public abstract double salario();
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public double getSalario() {
         return Salario;
+    }
+
+    public void setSalario(double salario) {
+        Salario = salario;
     }
 }

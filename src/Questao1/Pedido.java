@@ -9,6 +9,6 @@ public class Pedido {
         this.entrega = entrega;
     }
     public double precoEntrega() {
-        return entrega.calcularPreco(entrega.getDistancia(),entrega.getPeso());
+        return entrega.calcularPreco();
     }
 }

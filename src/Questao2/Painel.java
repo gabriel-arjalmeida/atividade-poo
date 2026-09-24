@@ -12,4 +12,5 @@ public class Painel {
         dispositivo.desligar();
         System.out.println("Desligado");
     }
+
 }

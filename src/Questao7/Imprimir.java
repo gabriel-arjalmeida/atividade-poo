@@ -3,8 +3,7 @@ package Questao7;
 public class Imprimir implements ProcessadorRelatorios{
     private Relatorio relatorio;
 
-    public Imprimir(Relatorio relatorio) {
-        this.relatorio = relatorio;
+    public Imprimir() {
     }
 
     public Relatorio getRelatorio() {
@@ -16,7 +15,7 @@ public class Imprimir implements ProcessadorRelatorios{
     }
 
     @Override
-    public void processarRelatorio() {
+    public void processarRelatorio(Relatorio relatorio) {
         System.out.println("Imprimindo o "+relatorio.getTitulo()+"...");
 
     }

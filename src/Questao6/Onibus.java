@@ -1,9 +1,11 @@
 package Questao6;
 
 public class Onibus extends VeiculoTerrestre{
+    private double capacidadeCarga;
 
-    public Onibus(int identificacao, boolean ligado, boolean temCombustivel, int capacidadeCarga) {
-        super(identificacao, ligado, temCombustivel, capacidadeCarga);
+    public Onibus(int identificacao, boolean ligado, boolean temCombustivel, double capacidadeCarga) {
+        super(identificacao, ligado, temCombustivel);
+        this.capacidadeCarga = capacidadeCarga;
     }
     @Override
     public void iniciar() {
@@ -13,5 +15,13 @@ public class Onibus extends VeiculoTerrestre{
         else{
             setLigado(false);
         }
+    }
+
+    public double getCapacidadeCarga() {
+        return capacidadeCarga;
+    }
+
+    public void setCapacidadeCarga(double capacidadeCarga) {
+        this.capacidadeCarga = capacidadeCarga;
     }
 }

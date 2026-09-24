@@ -15,7 +15,7 @@ public  abstract class Entrega {
     }
 
 
-    public abstract double calcularPreco(double distancia,double peso);
+    public abstract double calcularPreco();
 
     public String getDestinatario() {
         return destinatario;

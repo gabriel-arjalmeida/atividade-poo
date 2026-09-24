@@ -14,5 +14,9 @@ public class Main2 {
         painel.ligarDispositivo(ventilador);
         painel.ligarDispositivo(lampada);
         painel.ligarDispositivo(ar);
+
+        painel.desligarDispositivo(ventilador);
+        painel.desligarDispositivo(lampada);
+        painel.desligarDispositivo(ar);
     }
 }

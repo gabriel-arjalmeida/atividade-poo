@@ -3,12 +3,11 @@ package Questao7;
 public class EnviarEmail implements ProcessadorRelatorios{
     private Relatorio relatorio;
 
-    public EnviarEmail(Relatorio reatorio) {
-        this.relatorio = reatorio;
+    public EnviarEmail() {
     }
 
     @Override
-    public void processarRelatorio() {
+    public void processarRelatorio(Relatorio relatorio) {
         System.out.println("Enviando o relatorio "+relatorio.getTitulo()+" por email...");
     }
 

@@ -11,9 +11,8 @@ public class Alerta {
 
     @Override
     public String toString() {
-        return "Alerta{" +
+        return "Nova mensagem: " +
                 "titulo='" + titulo + '\'' +
-                ", conteudo='" + conteudo + '\'' +
-                '}';
+                ", conteudo='" + conteudo + '\'';
     }
 }

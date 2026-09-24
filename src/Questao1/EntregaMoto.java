@@ -7,8 +7,9 @@ public class EntregaMoto extends Entrega{
     }
 
     @Override
-    public double calcularPreco(double distancia, double peso) {
-        return distancia * peso;
+    public double calcularPreco()
+    {
+        return getDistancia() * getPeso();
     }
 
 
